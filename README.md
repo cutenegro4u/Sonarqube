@@ -9,7 +9,17 @@
 # Ading new user and giving an admin rights
     $ useradd sonar
     $ visudo 
-    (sonar )
+    Ex: (sonar   ALL=(ALL)       NOPASSWD:ALL )
+#  Change the user group and file permissions
+    $ chown -R sonar:sonar /opt/sonarqube-7.6
+    $ chmod -R 775 /opt/sonarqube-7.6/
+# Login in to Sonar user and start the sonarqube
+    $ su - sonar
+    $ cd /opt/sonarqube-7.6/bin/linux-x86-64
+    $ ./sonar.sh start
+# Enable the 9000 sg and use the sonarqube in the web
+    ex: http://54.90.205.176:9000/
+
 
 
 
