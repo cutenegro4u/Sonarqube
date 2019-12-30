@@ -20,6 +20,10 @@
 # Enable the 9000 sg and use the sonarqube in the web
     ex: http://54.90.205.176:9000/
 
+# To copy Existing Git repo to New Repo
+    git remote add origin https://github.com/cheerlavamsi/Selenium.git
+    git push -u origin master
+
 
 
 
