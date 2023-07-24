@@ -37,8 +37,6 @@ sonarqube default port is = 9000
 get the sonarqube public ip address
 publicIP:9000
 
-    $ cd ..
-    $ rm -rf old-repository.git
 
 
 
